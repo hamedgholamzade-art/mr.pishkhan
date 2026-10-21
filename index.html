@@ -6,93 +6,352 @@
 
 <title>دفتر پیشخوان غلامزاده | بیرجند</title>
 
-<meta name="description" content="دفتر پیشخوان غلامزاده در بیرجند - معرفی خدمات، آدرس، ساعات کاری و مسیر دسترسی">
-
 <style>
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+
+*{
+box-sizing:border-box;
 }
 
-body {
-    font-family: Tahoma, Arial, sans-serif;
-    background: #f4f7fb;
-    color: #172033;
-    line-height: 1.8;
+body{
+margin:0;
+font-family:Tahoma,Arial,sans-serif;
+background:#f1f5f9;
+color:#172033;
+line-height:1.9;
 }
 
-.container {
-    width: 92%;
-    max-width: 850px;
-    margin: auto;
+.hero{
+background:linear-gradient(135deg,#075985,#0f766e);
+color:white;
+text-align:center;
+padding:40px 20px 55px;
+border-radius:0 0 35px 35px;
 }
 
-/* Header */
-.hero {
-    background: linear-gradient(135deg, #075985, #0f766e);
-    color: white;
-    padding: 42px 20px 55px;
-    text-align: center;
-    border-radius: 0 0 35px 35px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+.logo{
+width:82px;
+height:82px;
+margin:auto;
+margin-bottom:15px;
+border-radius:50%;
+background:rgba(255,255,255,.18);
+border:2px solid rgba(255,255,255,.5);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:38px;
 }
 
-.logo {
-    width: 82px;
-    height: 82px;
-    background: rgba(255,255,255,0.18);
-    border: 2px solid rgba(255,255,255,0.45);
-    border-radius: 50%;
-    margin: 0 auto 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 38px;
+.hero h1{
+margin:5px 0;
+font-size:26px;
 }
 
-.hero h1 {
-    font-size: 27px;
-    margin-bottom: 8px;
+.hero p{
+margin:5px 0;
+font-size:15px;
 }
 
-.hero p {
-    font-size: 15px;
-    opacity: 0.92;
+.container{
+width:92%;
+max-width:700px;
+margin:auto;
 }
 
-/* Buttons */
-.buttons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-top: -27px;
-    position: relative;
+.buttons{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+margin-top:-25px;
+position:relative;
 }
 
-.btn {
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    padding: 15px 10px;
-    border-radius: 16px;
-    font-weight: bold;
-    color: white;
-    box-shadow: 0 7px 18px rgba(0,0,0,0.12);
+.btn{
+display:block;
+text-decoration:none;
+color:white;
+text-align:center;
+padding:15px 10px;
+border-radius:15px;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
 }
 
-.map {
-    background: #dc2626;
+.map{
+background:#dc2626;
 }
 
-.call {
-    background: #15803d;
+.call{
+background:#15803d;
 }
 
-/* Cards */
-.card {
-    background: white;
-    margin-top: 22px;
-    padding: 24px 20px;
-    border-radius: 22px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0
+.card{
+background:white;
+margin-top:20px;
+padding:22px;
+border-radius:20px;
+box-shadow:0 4px 18px rgba(0,0,0,.07);
+}
+
+.card h2{
+margin-top:0;
+color:#075985;
+font-size:20px;
+}
+
+.info{
+margin:12px 0;
+padding:12px;
+background:#f8fafc;
+border-radius:12px;
+}
+
+.services{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+}
+
+.service{
+background:#eff6ff;
+border:1px solid #dbeafe;
+padding:13px 8px;
+border-radius:13px;
+text-align:center;
+font-weight:bold;
+font-size:14px;
+}
+
+.service span{
+display:block;
+font-size:25px;
+}
+
+.instagram{
+display:block;
+background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);
+color:white;
+text-decoration:none;
+text-align:center;
+padding:15px;
+border-radius:14px;
+font-weight:bold;
+}
+
+footer{
+text-align:center;
+padding:30px 15px;
+font-size:12px;
+color:#64748b;
+}
+
+@media(max-width:500px){
+
+.buttons{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:23px;
+}
+
+.services{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+
+<div class="logo">🏢</div>
+
+<h1>دفتر پیشخوان غلامزاده</h1>
+
+<p>ارائه خدمات دولت و خدمات عمومی</p>
+
+<p>📍 بیرجند</p>
+
+</header>
+
+<main class="container">
+
+<div class="buttons">
+
+<a class="btn map"
+href="https://maps.app.goo.gl/KGqPj8sFjXVjifLQ8"
+target="_blank">
+📍 مسیریابی تا دفتر
+</a>
+
+<a class="btn call"
+href="tel:">
+☎️ تماس با دفتر
+</a>
+
+</div>
+
+<section class="card">
+
+<h2>🏢 درباره دفتر</h2>
+
+<p>
+دفتر پیشخوان غلامزاده در شهر بیرجند
+آماده ارائه خدمات متنوع دولتی، اداری و عمومی
+به شهروندان محترم می‌باشد.
+</p>
+
+</section>
+
+<section class="card">
+
+<h2>📍 آدرس دفتر</h2>
+
+<div class="info">
+
+📍 بیرجند، خیابان پاسداران،
+خیابان باهنر غربی، پلاک ۵۶
+
+</div>
+
+<a class="btn map"
+href="https://maps.app.goo.gl/KGqPj8sFjXVjifLQ8"
+target="_blank">
+
+🗺️ مشاهده موقعیت در Google Maps
+
+</a>
+
+</section>
+
+<section class="card">
+
+<h2>🕐 ساعات کاری</h2>
+
+<div class="info">
+
+🌅 صبح: ۷:۳۰ تا ۱۳:۰۰
+
+</div>
+
+<div class="info">
+
+🌆 عصر: ۱۷:۰۰ تا ۲۰:۰۰
+
+</div>
+
+</section>
+
+<section class="card">
+
+<h2>📋 خدمات دفتر</h2>
+
+<div class="services">
+
+<div class="service">
+<span>🪪</span>
+خدمات ثبت احوال
+</div>
+
+<div class="service">
+<span>👥</span>
+خدمات تأمین اجتماعی
+</div>
+
+<div class="service">
+<span>🏥</span>
+خدمات بیمه و سلامت
+</div>
+
+<div class="service">
+<span>🏛️</span>
+خدمات دولتی
+</div>
+
+<div class="service">
+<span>📄</span>
+خدمات الکترونیک
+</div>
+
+<div class="service">
+<span>🚗</span>
+خدمات مرتبط با خودرو
+</div>
+
+<div class="service">
+<span>💳</span>
+خدمات کارت و پرداخت
+</div>
+
+<div class="service">
+<span>📱</span>
+خدمات سامانه‌های دولتی
+</div>
+
+<div class="service">
+<span>📮</span>
+خدمات پستی و عمومی
+</div>
+
+<div class="service">
+<span>🧾</span>
+خدمات استعلام و پیگیری
+</div>
+
+<div class="service">
+<span>🔐</span>
+خدمات احراز هویت
+</div>
+
+<div class="service">
+<span>📑</span>
+خدمات اداری
+</div>
+
+</div>
+
+</section>
+
+<section class="card">
+
+<h2>📱 اینستاگرام دفتر</h2>
+
+<a class="instagram"
+href="https://instagram.com/mr.pishkhan"
+target="_blank">
+
+📸 مشاهده صفحه اینستاگرام دفتر
+
+</a>
+
+</section>
+
+<section class="card">
+
+<h2>☎️ ارتباط با دفتر</h2>
+
+<p>
+برای اطلاع از مدارک مورد نیاز، هزینه خدمات
+و جزئیات انجام هر خدمت، با دفتر تماس بگیرید.
+</p>
+
+</section>
+
+</main>
+
+<footer>
+
+دفتر پیشخوان غلامزاده — بیرجند
+
+<br>
+
+ارائه خدمات سریع و آسان به شهروندان
+
+</footer>
+
+</body>
+</html>
